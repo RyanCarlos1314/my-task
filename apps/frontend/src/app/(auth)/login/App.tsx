@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -39,12 +40,9 @@ export default function LoginPage() {
             </Button>
           </form>
           <div className="text-center mt-4">
-            <span className="text-sm text-gray-600">
-              Ainda nao tem conta?{" "}
-              <a href="/register" className="text-blue-600 hover:underline">
-                Criar conta
-              </a>
-            </span>
+            <p>
+              Não tem conta? <Link to="/register">Registre-se</Link>
+            </p>
           </div>
         </CardContent>
       </Card>
