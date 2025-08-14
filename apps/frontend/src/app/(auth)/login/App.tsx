@@ -20,14 +20,14 @@ export default function LoginPage() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-
+    // Verifica se o email está no formato correto
     if (!validarEmailFormato(email)) {
       setMensagem("❌ E-mail inválido! Por favor, verifique e tente novamente.");
       return;
     }
 
     if (email === EMAIL_VALIDO) {
-      setMensagem("");
+      localStorage.setItem("auth", "false"); // Simula autenticação
       navigate("/dashboard");
     } else {
       setMensagem("❌ E-mail não cadastrado! Redirecionando para registro...");

@@ -39,7 +39,7 @@ export default function RegisterPage() {
           </form>
           <div className="text-center mt-4">
             <p>
-              Já tem uma conta? <Link to="/">Fazer login</Link>
+              Já tem uma conta? <Link to="/login">Fazer login</Link>
             </p>
           </div>
         </CardContent>
